@@ -134,6 +134,8 @@ Monopoly.handleBuyProperty = function(player,propertyCell){
         var clickedBtn = $(this);
         if (clickedBtn.is("#yes")){
             Monopoly.handleBuy(player,propertyCell,propertyCost);
+            
+           
         }else{
             Monopoly.closeAndNextTurn();
         }
@@ -242,6 +244,7 @@ Monopoly.handleBuy = function(player,propertyCell,propertyCost){
     var playersMoney = Monopoly.getPlayersMoney(player)
     if (playersMoney < propertyCost){
         Monopoly.showErrorMsg();
+        Monopoly.playSound("maybe-next-time");
     }else{
         Monopoly.updatePlayersMoney(player,propertyCost);
         var rent = Monopoly.calculateProperyRent(propertyCost);

@@ -1,0 +1,10 @@
+3) sad face in jail. checked, which class added to class player(player.addClass("jailed");), when player in jail,
+ and made stylish for this class in css .player.jailed{
+    background-image:url(../images/sadJailFace.png);
+    background-size:contain;
+    background-position:center;
+}
+
+4) Happy smile on own property player.addClass("jailed");
+
+line 90 check
