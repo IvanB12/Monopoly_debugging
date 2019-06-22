@@ -1,4 +1,5 @@
-3) sad face in jail. checked, which class added to class player(player.addClass("jailed");), when player in jail,
+3) sad face in jail. checked, which class added to class player(player.addClass("jailed");),
+ when player in jail,
  and made stylish for this class in css .player.jailed{
     background-image:url(../images/sadJailFace.png);
     background-size:contain;
@@ -15,4 +16,30 @@ else if (playerCell.is(".property:not(.available)") && playerCell.hasClass(playe
     background-image:url(../images/happySmile.png);
     background-size:contain;
     background-position:center;
-5)
+5) validation input:
+Function that should validate input, "Monopoly.isValidInput" was written, incorrect. 
+So I made new one, wher instead of broken switch case 
+we have " if else statement", and only one parametr.
+
+also in function Monopoly.initPopups I changed this line :if (Monopoly.isValidInput( numOfPlayers)), 
+because it also took 2 parametres in fuction call.
+
+6)  commetns : I will add comments after I will finish all ohter points
+7) to much money: I will change after I will finish all ohter points  line 3 Monopoly.moneyAtStart = 1000;
+8) Community card : implemented
+I made almost same that for chance card:)
+
+9) console.log: done
+
+10) User Broke popup; done
+didn't figure out how to kick out player
+
+11) just changed multiplied value on negative number to get positive result. Fix Monopoly.handlePassedGo = function () {
+    var player = Monopoly.getCurrentPlayer();
+    Monopoly.updatePlayersMoney(player, -1*15);
+};
+
+12) Dice color: changed in CSS
+
+13) double counter didn't handle
+14) current ammount for each player
