@@ -5,6 +5,14 @@
     background-position:center;
 }
 
-4) Happy smile on own property player.addClass("jailed");
-
-line 90 check
+4) Happy smile on own property :
+  I added this line to fucntion Monopoly.handleTurn = function () {
+else if (playerCell.is(".property:not(.available)") && playerCell.hasClass(player.attr("id"))) {
+        Monopoly.handlePayRent(player, playerCell);
+        player.addClass("happy");  
+    } for all another cases in this function I removed this class using player.RemoveClass("happy"); 
+ and added new class to css .player.happy{
+    background-image:url(../images/happySmile.png);
+    background-size:contain;
+    background-position:center;
+5)

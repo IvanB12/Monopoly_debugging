@@ -209,7 +209,11 @@ body{
     background-size:contain;
     background-position:center;
 }
-
+.player.happy{
+    background-image:url(../images/happySmile.png);
+    background-size:contain;
+    background-position:center;
+}
 .board .dice.cell{
     background-color:white;
 }
